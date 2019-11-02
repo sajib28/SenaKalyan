@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Site Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&display=swap" rel="stylesheet">
+  <!-- font-family: 'Titillium Web', sans-serif; -->
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="vendors/owlCarousel/css/animate.css">
+  <link rel="stylesheet" href="vendors/fancybox/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="vendors/fancybox/css/jquery.fancybox-buttons.css">
+  <link rel="stylesheet" href="vendors/fancybox/css/jquery.fancybox-thumbs.css">
+  <link rel="stylesheet" href="vendors/owlCarousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/owlCarousel/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendors/flexslider/css/flexslider.css">
+  <!-- <link rel="stylesheet" href="vendors/flexslider/css/demo.css"> -->
+  <link rel="stylesheet" href="scss/main.css">
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+      -moz-box-sizing: border-box;
+      /* Firefox 1 - 28 */
+      box-sizing: border-box;
+    }
+
+    body,
+    html {
+      height: 100%;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .owl-carousel {
+      height: 100%;
+    }
+
+    .owl-carousel .owl-item,
+    .owl-carousel .item {
+      height: 100vh;
+    }
+
+    .owl-carousel .owl-item img {
+      transform-style: initial;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .owl-carousel .owl-item iframe {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .owl-thumb-item img {
+      width: 150px;
+      height: auto;
+    }
+
+    .owl-thumbs {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: table;
+      width: 100%;
+      text-align: center;
+      padding: 5%;
+    }
+
+    .owl-thumb-item {
+      display: table-cell;
+      border: none;
+      background: none;
+      padding: 0;
+      opacity: .4;
+    }
+
+    .owl-thumb-item.active {
+      opacity: 1;
+    }
+
+    .label {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #0a6cff;
+      color: white;
+      padding: 10px 20px;
+      z-index: 5;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body id="pageTop">
+  <!-- Start Menu -->
+
+  <nav id="mainNav" class="navbar navbar-expand-md navbar-trans fixed-top">
+    <div class="container">
+      <div class="navbar-header ml-auto">
+        <a class="navbar-brand js-scroll" href="#pageTop"><img src="img/logo.png" alt="" srcset=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav navbar-right ml-auto">
+          <li class="nav-item"><a class="nav-link js-scroll active" href="#pageTop">Home</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#service">Service</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#project">Project</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#testimonial">Testimonial</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#clients">Clients</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Menu -->
+  <!-- carousel Slider -->
+  <section id="slider">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 img-fluid" src="img/slider/slide-2.jpg" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption d-md-block">
+                  <h2 data-animation="animated slideInDown">First slide label</h2>
+                  <p data-animation="animated slideInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam quisquam, recusandae culpa eum iure nulla?</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid" src="img/slider/slide-1.jpg" alt="Second slide">
+              <div class="container">
+                <div class="carousel-caption d-md-block">
+                  <h2 data-animation="animated slideInDown">First slide label</h2>
+                  <p data-animation="animated slideInUp">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid" src="img/slider/slide-2.jpg" alt="Third slide">
+              <div class="container">
+                <div class="carousel-caption d-md-block">
+                  <h2 data-animation="animated slideInDown">First slide label</h2>
+                  <p data-animation="animated slideInUp">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Slider -->
+  <!-- Start About -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <header class="section-header text-center">
+            <h2>About us</h2>
+            <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.
+            </p>
+          </header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, omnis ab! Distinctio provident tempore
+              deleniti. Eveniet quisquam quas vitae quibusdam quia, placeat ex corrupti sequi et perferendis neque iusto
+              delectus pariatur consectetur deserunt nobis cupiditate sint ullam! Iusto dolorum maiores quas fugit.
+              Repellendus asperiores cupiditate ratione quo, illum reprehenderit labore odio molestias mollitia
+              excepturi repellat dolorem magnam corrupti iste repudiandae vitae! Eveniet architecto reiciendis explicabo
+              inventore excepturi nisi quod. Quisquam ex magnam magni odio eos delectus reiciendis quae consectetur
+              nihil. Necessitatibus voluptatum sit culpa corporis reprehenderit iusto pariatur iste rerum? Blanditiis
+              aspernatur distinctio dignissimos laboriosam repellendus. Molestias repudiandae, quibusdam nulla labore
+              minus illo exercitationem tempora et tenetur facilis odit amet illum, repellendus eos ea? Id, dolore
+              nesciunt tempore quo blanditiis suscipit ipsam eos quam harum tempora eum ullam, ex labore quisquam saepe
+              atque eveniet similique. Et ratione quae alias itaque!</p>
+          </div>
+        </div>
+        <!--End Col-->
+        <div class="col-md-6">
+          <img class="img-fluid" src="img/about-us.jpg" alt="About Us">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Service -->
+  <!-- Start Service -->
+  <section id="video">
+    <div class="container-fluid pl-0 pr-0">
+      <div class="row">
+        <div class="col-md-12">
+          <header class="section-header text-center">
+            <h2>Video on Sena Kalyan Sangstha</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas at alias modi atque maxime praesentium
+              perferendis nobis rem fugiat nam soluta placeat dicta et quas aliquid ducimus, ad fuga necessitatibus?
+            </p>
+          </header>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- flex slider -->
+          <!-- Place somewhere in the <body> of your page -->
+          <div id="fslider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/4oPAMPfgERk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </li>
+              <li>
+                <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/eebSZC1SXSI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </li>
+              <li>
+                <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/4oPAMPfgERk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </li>
+              <li>
+                <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/eebSZC1SXSI" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </li>
+              <li>
+                <div class="video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/4oPAMPfgERk" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </li>
+              <!-- items mirrored twice, total of 12 -->
+            </ul>
+          </div>
+          <div id="carouselVideo" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="./img/slider/kitchen_adventurer_caramel.jpg" />
+              </li>
+              <li>
+                <img src="./img/slider/kitchen_adventurer_cheesecake_brownie.jpg" />
+              </li>
+              <li>
+                <img src="./img/slider/kitchen_adventurer_donut.jpg" />
+              </li>
+              <li>
+                <img src="./img/slider/kitchen_adventurer_lemon.jpg" />
+              </li>
+              <li>
+                <img src="./img/slider/kitchen_adventurer_caramel.jpg" />
+              </li>
+              <!-- items mirrored twice, total of 12 -->
+            </ul>
+          </div>
+          <!-- End flex slider -->
+
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Service -->
+  <!-- Start Project -->
+  <section id="project">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <header class="section-header text-center">
+            <h2>Products/Services</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s</p>
+          </header>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Start Project menu -->
+        <div class="col-md-12">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" data-filter="all">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-filter=".food">Food Items</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-filter=".electrical-products">Electrical Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-filter=".energy">Energy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-filter=".Ggerments-item">Germents Item</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-filter=".meterials">Construction Materials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-filter=".realstate">Real Estates</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-filter=".service">Services</a>
+            </li>
+          </ul>
+        </div>
+        <!-- End Project menu -->
+        <!-- Start project Item -->
+        <div class="col-md-3 mix meterials">
+          <div class="project-item">
+            <div class="project-inner">
+              <div class="project-img">
+                <img class="img-fluid" src="img/project/project1.jpg" alt="Alt tag">
+              </div>
+              <div class="overlay">
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                <a class="fancybox" href="img/project/project1.jpg"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <h4>Mirpur DOHS @ Tk.7850 Per Sqft</h4>
+            </div>
+          </div>
+        </div>
+        <!-- End project Item -->
+        <!-- Start project Item -->
+        <div class="col-md-3 mix realstate">
+          <div class="project-item">
+            <div class="project-inner">
+              <div class="project-img">
+                <img class="img-fluid" src="img/project/project1.jpg" alt="Alt tag">
+              </div>
+              <div class="overlay">
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                <a class="fancybox" href="img/project/project1.jpg"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <h4>Mirpur DOHS @ Tk.7850 Per Sqft</h4>
+            </div>
+          </div>
+        </div>
+        <!-- End project Item -->
+        <!-- Start project Item -->
+        <div class="col-md-3 mix service">
+          <div class="project-item">
+            <div class="project-inner">
+              <div class="project-img">
+                <img class="img-fluid" src="img/project/project1.jpg" alt="Alt tag">
+              </div>
+              <div class="overlay">
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                <a class="fancybox" href="img/project/project1.jpg"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <h4>Mirpur DOHS @ Tk.7850 Per Sqft</h4>
+            </div>
+          </div>
+        </div>
+        <!-- End project Item -->
+        <!-- Start project Item -->
+        <div class="col-md-3 mix food">
+          <div class="project-item">
+            <div class="project-inner">
+              <div class="project-img">
+                <img class="img-fluid" src="img/project/project1.jpg" alt="Alt tag">
+              </div>
+              <div class="overlay">
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                <a class="fancybox" href="img/project/project1.jpg"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <h4>Mirpur DOHS @ Tk.7850 Per Sqft</h4>
+            </div>
+          </div>
+        </div>
+        <!-- End project Item -->
+        <!-- Start project Item -->
+        <div class="col-md-3 mix meterials">
+          <div class="project-item">
+            <div class="project-inner">
+              <div class="project-img">
+                <img class="img-fluid" src="img/project/project1.jpg" alt="Alt tag">
+              </div>
+              <div class="overlay">
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                <a class="fancybox" href="img/project/project1.jpg"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <h4>Mirpur DOHS @ Tk.7850 Per Sqft</h4>
+            </div>
+          </div>
+        </div>
+        <!-- End project Item -->
+        <!-- Start project Item -->
+        <div class="col-md-3 mix realstate">
+          <div class="project-item">
+            <div class="project-inner">
+              <div class="project-img">
+                <img class="img-fluid" src="img/project/project1.jpg" alt="Alt tag">
+              </div>
+              <div class="overlay">
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                <a class="fancybox" href="img/project/project1.jpg"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <h4>Mirpur DOHS @ Tk.7850 Per Sqft</h4>
+            </div>
+          </div>
+        </div>
+        <!-- End project Item -->
+        <!-- Start project Item -->
+        <div class="col-md-3 mix food">
+          <div class="project-item">
+            <div class="project-inner">
+              <div class="project-img">
+                <img class="img-fluid" src="img/project/project1.jpg" alt="Alt tag">
+              </div>
+              <div class="overlay">
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                <a class="fancybox" href="img/project/project1.jpg"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <h4>Mirpur DOHS @ Tk.7850 Per Sqft</h4>
+            </div>
+          </div>
+        </div>
+        <!-- End project Item -->
+        <!-- Start project Item -->
+        <div class="col-md-3 mix service">
+          <div class="project-item">
+            <div class="project-inner">
+              <div class="project-img">
+                <img class="img-fluid" src="img/project/project1.jpg" alt="Alt tag">
+              </div>
+              <div class="overlay">
+                <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                <a class="fancybox" href="img/project/project1.jpg"><i class="fas fa-eye"></i></a>
+              </div>
+            </div>
+            <div class="content">
+              <h4>Mirpur DOHS @ Tk.7850 Per Sqft</h4>
+            </div>
+          </div>
+        </div>
+        <!-- End project Item -->
+      </div>
+    </div>
+  </section>
+  <!-- End Project -->
+  <!-- Start Skills -->
+  <section id="skills">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 pl-0 pr-0">
+          <div class="skill-left">
+            <p>Skilled and Unskilled Worker Recruitment in Saudi Arab only 35000/Skilled and Unskilled Worker
+              Recruitment in Saudi Arab only 35000/</p>
+          </div>
+        </div>
+        <div class="col-md-6 pl-0 pr-0">
+          <div class="skill-right">
+            <h2>Welfare Activities</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-handshake"></i>Stipend Support</li>
+              <li><i class="fas fa-handshake"></i>Medical Treatment</li>
+              <li><i class="fas fa-handshake"></i>Rest House Support</li>
+              <li><i class="fas fa-handshake"></i>Old Home</li>
+              <li><i class="fas fa-handshake"></i>CSR Facilities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Skills -->
+  <!-- Start Contact -->
+  <section id="contact">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9 pl-0">
+          <div class="maps">
+            <div class="contact-form text-center">
+              <h2>Your Feed Back</h2>
+              <p>Please use the following form to send your feed back to Sena Kalyan Sangstha</p>
+              <form>
+                <div class="form-group">
+                  <input type="name" class="form-control" id="email" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="E-Mail">
+                </div>
+
+                <div class="form-group">
+                  <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                  <textarea name="comments" class="form-control" id="comments" placeholder="comments"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary d-block">Submit</button>
+              </form>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643151.996767441!2d89.60108080299891!3d23.80535093929537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e0!3m2!1sen!2sbd!4v1572303292547!5m2!1sen!2sbd"
+              width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+        <div class="col-md-3 pr-0">
+          <div class="contact-info">
+            <div class="contact-box">
+              <h3 class="mb-0">Sena Kalyan Sangstha</h3>
+            </div>
+            <div class="contact-box">
+              <p class="mb-0">Address: RAOWA COMPLEX (6th Floor)<br>VIP Road , Mohakhali<br>Dhaka - 1208, Bangladesh</p>
+            </div>
+            <div class="contact-box">
+              <li>PABX: 880 2 9890819</li>
+              <li>Fax: 880 2 9890900</li>
+            </div>
+            <div class="contact-box">
+              <li>Email: <a href="mailto">info@senakalyan.com</a></li>
+              <li>Web: <a href="http://www.senakalyan.org/">www.senakalyan.org</a></li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact -->
+  <!-- Start Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright text-center">
+            <p class="mb-0">&copy; 2018 Sena Kalyan Sangstha (SKS) | All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <!--   <a class="fancybox" href="img/10_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="img/10_b.jpg" alt="" /></a> -->
+  <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+  <!-- <div id="preloader"></div> -->
+  <script src="vendors/jQuery/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="vendors/flexslider/js/jquery.flexslider.js"></script>
+  <script src="vendors/jQuery/easing.min.js"></script>
+  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendors/mixitup/mixitup.min.js"></script>
+  <script type="text/javascript" src="vendors/fancybox/js/jquery.mousewheel.pack.js"></script>
+  <script type="text/javascript" src="vendors/fancybox/js/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="vendors/fancybox/js/helpers/jquery.fancybox-buttons.js"></script>
+  <script type="text/javascript" src="vendors/fancybox/js/helpers/jquery.fancybox-thumbs.js"></script>
+  <script type="text/javascript" src="vendors/owlCarousel/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="vendors/owlCarousel/js/owl.carousel2.thumbs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
