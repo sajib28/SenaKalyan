@@ -141,6 +141,11 @@ nav#mainNav .navbar-brand {
   padding: 0;
 }
 
+nav#mainNav .navbar-brand.center-logo img {
+  border-radius: 50%;
+  padding: 0 30px;
+}
+
 nav#mainNav ul li a {
   color: #fff;
   font-size: 18px;
@@ -177,6 +182,18 @@ section#slider h5 {
   font-size: 25px;
 }
 
+section#slider .top-caption {
+  position: absolute;
+  top: 60px;
+  color: #000;
+  z-index: 9;
+  font-size: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-weight: bold;
+}
+
 section#slider .carousel:after {
   position: absolute;
   width: 100%;
@@ -190,16 +207,18 @@ section#slider .carousel:after {
 }
 
 section#slider .carousel .carousel-caption {
-  top: 160px;
+  top: 50%;
   bottom: inherit;
-  text-align: left;
-  left: 9%;
-  width: 50%;
+  text-align: center;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 section#slider .carousel .carousel-caption h2 {
   font-size: 60px;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -219,6 +238,14 @@ section#slider .carousel .carousel-indicators {
 section#slider p {
   padding: 10px;
   font-size: 16px;
+}
+
+section#slider .carousel-indicators li {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 
 /*End Home Slider*/

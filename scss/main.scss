@@ -170,6 +170,13 @@ nav#mainNav {
 		font-size: 30px;
 		margin: 0;
 		padding: 0;
+
+		&.center-logo {
+			img {
+				border-radius: 50%;
+				padding: 0 30px;
+			}
+		}
 	}
 
 	ul {
@@ -220,6 +227,17 @@ section#slider {
 		font-size: 25px;
 	}
 
+	.top-caption {
+		position: absolute;
+		top: 60px;
+		color: #000;
+		z-index: 9;
+		font-size: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-weight: bold;
+	}
+
 	.carousel {
 		&:after {
 			position: absolute;
@@ -234,15 +252,16 @@ section#slider {
 		}
 
 		.carousel-caption {
-			top: 160px;
+			top: 50%;
 			bottom: inherit;
-			text-align: left;
-			left: 9%;
-			width: 50%;
+			text-align: center;
+			left: 50%;
+			width: 80%;
+			transform: translate(-50%, -50%);
 
 			h2 {
 				font-size: 60px;
-				text-transform: uppercase;
+				text-transform: none;
 				font-weight: 700;
 				margin-bottom: 10px;
 
@@ -268,7 +287,13 @@ section#slider {
 		padding: 10px;
 		font-size: 16px;
 	}
-
+   .carousel-indicators{
+	   li{
+		@include border-radius(50%);
+		width: 10px;
+		height: 10px;
+	   }
+   }
 }
 
 /*End Home Slider*/
@@ -325,7 +350,7 @@ section#slider {
 #video {
 	background: #f5f8fd;
 	overflow: hidden;
-	padding-bottom:0;
+	padding-bottom: 0;
 
 	.flexslider {
 		border: none;
@@ -355,9 +380,9 @@ section#slider {
 		// }
 
 		iframe {
-			display: block;  
-			border: none;       
-			height: 500px;     
+			display: block;
+			border: none;
+			height: 500px;
 			width: 100vw;
 		}
 	}
@@ -369,7 +394,8 @@ section#slider {
 
 		.flex-viewport {
 			max-height: 100px;
-			li{
+
+			li {
 				height: 100px;
 			}
 		}
